@@ -22,8 +22,8 @@ class MusicPlayer(QWidget):
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
         
-       
-        self.player.setSource(QUrl.fromLocalFile("Slipknot-Psychosocial.mp3"))
+        music_file_path = "/path/to/your/music/file.mp3"
+        self.player.setSource(QUrl.fromLocalFile(music_file_path))
 
         
         self.play_button.clicked.connect(self.toggle_music)
