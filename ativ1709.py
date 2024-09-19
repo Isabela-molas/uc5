@@ -22,7 +22,7 @@ class MusicPlayer(QWidget):
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
         
-        music_file_path = "/path/to/your/music/file.mp3"
+        music_file_path = "https://youtu.be/xk2BSs3eBvM?si=JhcWqSWypVehT5eo"
         self.player.setSource(QUrl.fromLocalFile(music_file_path))
 
         
@@ -48,3 +48,4 @@ if __name__ == "__main__":
     window = MusicPlayer()
     window.show()
     sys.exit(app.exec())
+    
